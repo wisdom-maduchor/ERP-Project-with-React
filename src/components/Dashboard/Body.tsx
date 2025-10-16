@@ -1,5 +1,6 @@
 
 import styles from './Body.module.scss'
+import Users from '../SideNav/Users';
 
 const Body = () => {
     return (
@@ -105,7 +106,9 @@ const Body = () => {
                 </div>
             </div>
 
-            <div className={styles.content}>Content section</div>
+            <div className={styles.content}>
+                <Users />
+            </div>
         </div>
     )
 };

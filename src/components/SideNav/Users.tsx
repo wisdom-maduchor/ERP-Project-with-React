@@ -50,7 +50,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.inactive}>Inactive</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -59,7 +59,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.pending}>Pending</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -68,7 +68,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.blacklisted}>Blacklisted</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -77,7 +77,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.active}>Active</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -86,7 +86,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.inactive}>Inactive</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -95,7 +95,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.pending}>Pending</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -104,7 +104,7 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.blacklisted}>Blacklisted</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                     <tr>
                         <td>data</td>
@@ -113,12 +113,37 @@ const Users = () => {
                         <td>data</td>
                         <td>data</td>
                         <td><span className={styles.active}>Active</span></td>
-                        <td><span><img src="src/assets/Users/threeDot.svg" alt="" /></span></td>
+                        <td><a href=''><img src="src/assets/Users/threeDot.svg" alt="" /></a></td>
                     </tr>
                 </table>
             </div>
 
-            <div></div>
+            <div className={styles.paginator}>
+                <div className={styles.pageLeft}>
+                    <form action="">
+                        <span>Showing</span>
+                        <span className={styles.select}>
+                            <select name="paginator" id="paginator">
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                            </select>
+                        </span>
+                        <span>out of 100</span>
+                    </form>
+                </div>
+
+                <div className={styles.pageRight}>
+                    <img src="src/assets/Users/prev_btn.svg" alt="" />
+                    <span> 1 </span> 
+                    <span> 2 </span> 
+                    {/* <span><img src="src/assets/Users/horizontal_Dots.svg" alt="" /></span>  */}
+                    <span> ... </span>
+                    <span> 15 </span>
+                    <span> 16 </span>
+                    <img src="src/assets/Users/next_btn.svg" alt="" />
+                </div>
+            </div>
         </Fragment>
     )
 }

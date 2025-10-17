@@ -6,6 +6,8 @@ body{
     margin: 0;
     font-family: sans-serif, Arial, Helvetica;
 }
+
+// BOX SECTION
 .box{
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,6 +22,9 @@ body{
    border-radius: 5px;
    width: 100%;
 }
+.box div img{
+    padding: 0;
+}
 .box1{
     margin-right: 15px;
 }
@@ -29,6 +34,8 @@ body{
 .box3{
     margin-right: 15px;
 }
+
+// TABLE SECTION
 .table{
     // align-items: center;
     background-color: white;
@@ -42,7 +49,7 @@ body{
     padding-bottom: 20px;
 }
 .table table th span{
-    margin-right: 10px;
+    // margin-right: 10px;
     color: #545F7D;
     font-size: 12px;
 }
@@ -55,10 +62,10 @@ body{
     padding-top: 7px;
     font-size: 14px;
     color: #545F7D;
-    padding-left: 30px;
+    padding-left: 25px;
     margin-left: 20px;
 }
-.table table td span{
+.table table td span,a{
     // border-bottom: 1px solid #ddd;
     // padding-left: 30px;
     // font-size: 14px;
@@ -103,4 +110,38 @@ body{
     line-height: 100%;
     width: 76px;
     height: 17px;
+}
+
+// PAGINATOR SECTION
+.paginator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #545F7D;
+}
+.pageLeft span{
+    padding-right: 5px;
+    font-size: 14px;
+}
+.pageLeft span select{
+    // color: #545F7D;
+    border: none;
+    background-color: #d0d2d8;
+    border-radius: 5px;
+    padding: 3px;
+}
+.pageLeft span select option::backdrop{
+    border: none;
+}
+.pageRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.pageRight span,img{
+    padding-left: 15px;
+    font-size: 16px;
 }
